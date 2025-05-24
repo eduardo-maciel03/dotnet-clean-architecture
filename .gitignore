@@ -1,0 +1,54 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+
+# Templated code backup
+*.bak
+
+# Rider IDE
+.idea/
+
+# VS Code settings
+.vscode/
+
+# DotCover
+*.dotCover
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Entity Framework Migrations
+Migrations/
+
+# Secrets
+secrets.json
+
+# dotenv
+.env
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
