@@ -14,12 +14,14 @@ Projeto ASP.NET Core que implementa Clean Architecture com foco em organização
 ---
 
 ## 🧱 Estrutura do Projeto
+```
 TaskManager/
 ├── Domain/ → Entidades e interfaces do domínio
 ├── Application/ → Casos de uso e DTOs
 ├── Infrastructure/ → Repositórios (mock/in-memory)
 ├── WebAPI/ → Endpoints, autenticação e configuração
 ├── Tests/ → Testes unitários com xUnit
+```
 
 ---
 
