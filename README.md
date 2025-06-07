@@ -1,44 +1,44 @@
 # TaskManager.CleanArch
 
-Projeto ASP.NET Core que implementa Clean Architecture com foco em organização em camadas, autenticação baseada em cookies, endpoints minimalistas, testes automatizados com xUnit e FluentAssertions. Ideal para demonstrar boas práticas em APIs escaláveis, seguras e testáveis.
+ASP.NET Core project that implements Clean Architecture with a focus on layered organization, cookie-based authentication, minimalist endpoints, automated testing with xUnit and FluentAssertions. Ideal for demonstrating good practices in scalable, secure and testable APIs.
 
-## 🔧 Tecnologias
+## 🔧 Technologies
 
 - **ASP.NET Core 8**
 - **Minimal APIs**
-- **Autenticação via Cookie**
+- **Cookie Authentication**
 - **Clean Architecture (Domain, Application, Infrastructure, Presentation)**
-- **xUnit + FluentAssertions** (testes)
+- **xUnit + FluentAssertions** (tests)
 - **Swagger/OpenAPI**
 
 ---
 
-## 🧱 Estrutura do Projeto
+## 🧱 Project Structure
 ```
 TaskManager/
-├── Domain/ → Entidades e interfaces do domínio
-├── Application/ → Casos de uso e DTOs
-├── Infrastructure/ → Repositórios (mock/in-memory)
-├── WebAPI/ → Endpoints, autenticação e configuração
-├── Tests/ → Testes unitários com xUnit
+├── Domain/ → Domain entities and interfaces
+├── Application/ → Use cases and DTOs
+├── Infrastructure/ → Repositories (mock/in-memory)
+├── WebAPI/ → Endpoints, authentication and configuration
+├── Tests/ → Unit tests with xUnit
 ```
 
 ---
 
-## ✅ Funcionalidades
+## ✅ Features
 
-- ✅ Criação de tarefas com título e descrição
-- ✅ Listagem de tarefas
-- ✅ Autenticação com cookie (login/logout)
-- ✅ Proteção de rotas para usuários autenticados
-- ✅ Testes unitários para casos de uso
-- ✅ Swagger UI para documentação
+- ✅ Creating tasks with title and description
+- ✅ Listing tasks
+- ✅ Authentication with cookie (login/logout)
+- ✅ Protecting routes for authenticated users
+- ✅ Unit tests for use cases
+- ✅ Swagger UI for documentation
 
 ---
 
-## 🔐 Autenticação
+## 🔐 Authentication
 
-O sistema utiliza **autenticação baseada em cookies** com identidade simulada para fins demonstrativos.
+The system uses **cookie-based authentication** with simulated identity for demonstration purposes.
 
 ### Login
 
@@ -52,15 +52,15 @@ Content-Type: application/json
 } 
 ```
 
-Retorna um cookie de autenticação válido para usar nas rotas protegidas.
+Returns a valid authentication cookie to use in protected routes.
 
-## 📦 Endpoints principais
+## 📦 Main Endpoints
 
 ```http
-GET /api/tasks — listar tarefas (requer autenticação)
-POST /api/tasks — criar tarefa (requer autenticação)
+GET /api/tasks — list tasks (requires authentication)
+POST /api/tasks — create task (requires authentication)
 ```
 
 ## 🧪 xUnit
 
-Em TaskManager.Tests, rode: dotnet test
+In TaskManager.Tests, run: dotnet test
